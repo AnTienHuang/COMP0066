@@ -1,3 +1,4 @@
+"""Module providing square root calculation."""
 import math
 
 a = [int(s) for s in input("Please enter numbers separated by a comma:").split(',')]
