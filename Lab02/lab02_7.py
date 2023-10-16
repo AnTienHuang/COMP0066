@@ -1,11 +1,13 @@
 import random
 
 def print_board(board):
+    print()
     print("|".join(board[0]))
     print("-" * 11)
     print("|".join(board[1]))
     print("-" * 11)
     print("|".join(board[2]))
+    print()
 
 def get_input(board):
     # board = [[" " for _ in range(3)] for _ in range(3)]
@@ -85,10 +87,10 @@ def main():
     board = [["   " for _ in range(3)] for _ in range(3)]
 
     print("Welcome to Tic-Tac-Toe!")
+    print_board(board)
 
     while True:
         # display board
-        print_board(board)
         # player starts first
         get_input(board)
         print_board(board)
